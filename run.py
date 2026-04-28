@@ -23,14 +23,20 @@ print(model.x)
 import importlib
 
 importlib.reload(regression)
-model = regression.LinearRegression()
+
 """
 print(model.fit(X, Y))
 print(model.theta)
 """
 
 # ver3
-importlib.reload(regression)
-model = regression.LinearRegression()
+
+"""
 print (model.fit(X, Y))
 print (model.predict(X))
+"""
+
+# ver4
+
+print(model.fit(X, Y))
+print(model.score(X, Y))
