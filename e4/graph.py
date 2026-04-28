@@ -11,5 +11,6 @@ import numpy as np
 x = np.linspace(-1, 1, 100)
 y = dataset1.true_function(x)
 
-plt.plot(x, y)
+plt.plot(x, y, label="true_function")
+plt.legend() 
 plt.show()
