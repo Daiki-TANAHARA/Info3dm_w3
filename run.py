@@ -7,5 +7,11 @@ print(X)
 print(X[0])
 print(Y)
 
+#ver1
+
+import regression
+
+model = regression.LinearRegression()
+print(model.x)
 
 
