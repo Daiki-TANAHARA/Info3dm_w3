@@ -11,6 +11,6 @@ import numpy as np
 x = np.linspace(-1, 1, 100)
 y = dataset1.true_function(x)
 
-plt.plot(x, y, label="true_function")
+plt.plot(x, y, label="y = sin(pi * x * 0.8) * 10")
 plt.legend() 
 plt.show()
