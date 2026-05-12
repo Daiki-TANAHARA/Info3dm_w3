@@ -1,0 +1,274 @@
+Last login: Fri Apr 24 11:36:14 on ttys001
+TD <~> % mv Downloads/03.pdf Desktop/Mechatronics 
+TD <~> % open Desktop/Mechatronics 
+TD <~> % cd class3 
+TD <class3> % ls
+Data_mining	dsp		imagePro	Info3dm
+TD <class3> % cd Info3dm 
+TD <Info3dm> % ls
+ex_w2			plot_iris_svc.py	README.md
+main.py			pyproject.toml		uv.lock
+TD <Info3dm> % mkdir ex_w3
+TD <Info3dm> % cd ex_w3 
+TD <ex_w3> % ls
+TD <ex_w3> % ls -a
+.	..
+TD <ex_w3> % git init
+Initialized empty Git repository in /Users/tntndiiicloud.com/class3/Info3dm/ex_w3/.git/
+TD <ex_w3> % ls -a
+.	..	.git
+TD <ex_w3> % git st
+On branch main
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+TD <ex_w3> % git add 
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Turn this message off by running
+hint: "git config advice.addEmptyPathspec false"
+TD <ex_w3> % git add .
+TD <ex_w3> % git st   
+On branch main
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+TD <ex_w3> % git commit -m "1st commit"
+On branch main
+
+Initial commit
+
+nothing to commit (create/copy files and use "git add" to track)
+TD <ex_w3> % echo "# Info3dm_w3" >> README.md      
+TD <ex_w3> % git init
+Reinitialized existing Git repository in /Users/tntndiiicloud.com/class3/Info3dm/ex_w3/.git/
+TD <ex_w3> % git add README.md
+TD <ex_w3> % git commit -m "first commit"
+[main (root-commit) d9ca826] first commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md
+TD <ex_w3> % git branch -M main
+TD <ex_w3> % git remote add origin git@github.com:Daiki-TANAHARA/Info3dm_w3.git
+TD <ex_w3> % git push -u origin main
+git@github.com: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+TD <ex_w3> % git st 
+On branch main
+nothing to commit, working tree clean
+TD <ex_w3> % le -a
+zsh: command not found: le
+TD <ex_w3> % ls -a
+.		..		.git		README.md
+TD <ex_w3> % ls ~/.ssh
+config		github.pub	id_ed25519.pub	known_hosts.old
+github		id_ed25519	known_hosts
+TD <ex_w3> % cat ~/.ssh/id_ed25519.pub
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIItDzAK+E9SPCd+u59ABQgIeAZitjIwLR/d1SHi2enAG tntndiiicloud.com@tanaharadainoMacBook-Air.local
+TD <ex_w3> % cat ~/.ssh/github.pub
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQCXlc+KELOWhxX0UhcG9vuRFb6Lw+C02CL6mBr3PWlqf7LvU94u1P/yJoObD+nf2XhgIVed4F/rIqyq/Rg1y9otR4mimgJq3x9pDqQ46w/JJ2S9f5c7sCwZhTpPWtU3A5wiWi37Bo3GpEjz/HWtOB/c72/AVSTJTB/oG3+mck6LPID9u3cftxBvDQMwtOVZouny5kN9CFr88TgysCgBpx2Z9wUNO1wNgcmBQ8tUfSRARfpcZvy8lEVC2/oZx8N5lrivn8jBtrCvbJZyhBOg0DOtdJQ+Fax/tNWo6XOwIpT8cqG3mhSaY5dUmZxxlyEHmOxWImo6qD6+zxsAfzllK8uZNKL7zc8f1lthqIjGln+2PoIro2ivTxG5+SmAOVJc0c2meSdv3V/CcCpc0J67PoBhzGFfUKhM2H3JqeLZg6fgmGyZZtXCtdlFPbf2CeYPh0ykIsXEKTPBNl/RJ5iW2qkBupvUbEVKaSSCwHclBRC+lN861K910feiB1Wff1NVxEw869L8miOkD5N8Rov0eSm08OJffIIeLRU7f79e4965usCy4zvhk0iKT+a/ZMSdN3cuG6iTtYqeJDY3Q6uev8NPFhfVYQPItI9nxMgPtTQBDrKGZMyPKeeV8WZl972HKg/ziAgrc+A8YDywnoedQ/JoZeEHWEoy9/ig1bctc+t/5w== e245725@ie.u-ryukyu.ac.jp
+TD <ex_w3> % ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQCXlc+KELOWhxX0UhcG9vuRFb6Lw+C02CL6mBr3PWlqf7LvU94u1P/yJoObD+nf2XhgIVed4F/rIqyq/Rg1y9otR4mimgJq3x9pDqQ46w/JJ2S9f5c7sCwZhTpPWtU3A5wiWi37Bo3GpEjz/HWtOB/c72/AVSTJTB/oG3+mck6LPID9u3cftxBvDQMwtOVZouny5kN9CFr88TgysCgBpx2Z9wUNO1wNgcmBQ8tUfSRARfpcZvy8lEVC2/oZx8N5lrivn8jBtrCvbJZyhBOg0DOtdJQ+Fax/tNWo6XOwIpT8cqG3mhSaY5dUmZxxlyEHmOxWImo6qD6+zxsAfzllK8uZNKL7zc8f1lthqIjGln+2PoIro2ivTxG5+SmAOVJc0c2meSdv3V/CcCpc0J67PoBhzGFfUKhM2H3JqeLZg6fgmGyZZtXCtdlFPbf2CeYPh0ykIsXEKTPBNl/RJ5iW2qkBupvUbEVKaSSCwHclBRC+lN861K910feiB1Wff1NVxEw869L8miOkD5N8Rov0eSm08OJffIIeLRU7f79e4965usCy4zvhk0iKT+a/ZMSdN3cuG6iTtYqeJDY3Q6uev8NPFhfVYQPItI9nxMgPtTQBDrKGZMyPKeeV8WZl972HKg/ziAgrc+A8YDywnoedQ/JoZeEHWEoy9/ig1bctc+t/5w== e245725@ie.u-ryukyu.ac.jp
+
+zsh: command not found: ssh-rsa
+TD <ex_w3> % pwd
+/Users/tntndiiicloud.com/class3/Info3dm/ex_w3
+TD <ex_w3> % ls -a
+.		..		.git		README.md
+TD <ex_w3> % rm -rf .git
+TD <ex_w3> % git init
+Initialized empty Git repository in /Users/tntndiiicloud.com/class3/Info3dm/ex_w3/.git/
+TD <ex_w3> % git commit -m "first commit"
+On branch main
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	README.md
+
+nothing added to commit but untracked files present (use "git add" to track)
+TD <ex_w3> % git add README.md
+TD <ex_w3> % git commit -m "first commit"
+[main (root-commit) 043a8aa] first commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md
+TD <ex_w3> % git branch -M main
+TD <ex_w3> % git remote add origin git@github.com:Daiki-TANAHARA/Info3dm_w3.git
+TD <ex_w3> % git push -u origin main
+git@github.com: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+TD <ex_w3> % cd ~
+TD <~> % cd ~/.ssh
+TD <.ssh> % ls
+config		github.pub	id_ed25519.pub	known_hosts.old
+github		id_ed25519	known_hosts
+TD <.ssh> % pbcopy < ~/.ssh/github.pub
+TD <.ssh> % cat ~/.ssh/config
+Host github.com
+  IdentityFile ~/.ssh/github
+TD <.ssh> % pbcopy < ~/.ssh/github.pub
+TD <.ssh> % cd ~/class3/Info3dm/ex_w3
+TD <ex_w3> % git push -u origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 238 bytes | 238.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To github.com:Daiki-TANAHARA/Info3dm_w3.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+TD <ex_w3> % code .
+TD <ex_w3> % python
+zsh: command not found: python
+TD <ex_w3> % conda activate base
+(base) TD <ex_w3> % python             
+Python 3.11.7 (main, Dec 15 2023, 12:09:56) [Clang 14.0.6 ] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import datasets
+>>> X,Y = datasets.load_linear_example1()
+>>> X
+array([[ 1,  4],
+       [ 1,  8],
+       [ 1, 13],
+       [ 1, 17]])
+>>> X[0]
+array([1, 4])
+>>> Y
+array([ 7, 10, 11, 14])
+>>> 
+KeyboardInterrupt
+>>> 
+KeyboardInterrupt
+>>> 
+(base) TD <ex_w3> % code .
+(base) TD <ex_w3> % git add .
+(base) TD <ex_w3> % git commit -m "test1"
+[main c6bf80c] test1
+ 3 files changed, 17 insertions(+)
+ create mode 100644 __pycache__/datasets.cpython-311.pyc
+ create mode 100644 datasets.py
+ create mode 100644 run.py
+(base) TD <ex_w3> % git push
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 1011 bytes | 1011.00 KiB/s, done.
+Total 6 (delta 0), reused 0 (delta 0), pack-reused 0
+To github.com:Daiki-TANAHARA/Info3dm_w3.git
+   043a8aa..c6bf80c  main -> main
+(base) TD <ex_w3> % git add .            
+(base) TD <ex_w3> % git commit -m "ver1" 
+[main 1605f65] ver1
+ 3 files changed, 21 insertions(+)
+ create mode 100644 __pycache__/regression.cpython-311.pyc
+ create mode 100644 regression.py
+(base) TD <ex_w3> % git push            
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 1.16 KiB | 1.17 MiB/s, done.
+Total 6 (delta 0), reused 0 (delta 0), pack-reused 0
+To github.com:Daiki-TANAHARA/Info3dm_w3.git
+   c6bf80c..1605f65  main -> main
+(base) TD <ex_w3> % git add .           
+(base) TD <ex_w3> % git commit -m "ver2"
+[main d0ed457] ver2
+ 3 files changed, 14 insertions(+), 1 deletion(-)
+(base) TD <ex_w3> % git push            
+Enumerating objects: 11, done.
+Counting objects: 100% (11/11), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 1.33 KiB | 1.33 MiB/s, done.
+Total 6 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To github.com:Daiki-TANAHARA/Info3dm_w3.git
+   1605f65..d0ed457  main -> main
+(base) TD <ex_w3> % git add .           
+(base) TD <ex_w3> % git commit -m "ver3"
+[main c29191a] ver3
+ 3 files changed, 10 insertions(+), 3 deletions(-)
+(base) TD <ex_w3> % git push            
+Enumerating objects: 11, done.
+Counting objects: 100% (11/11), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 801 bytes | 801.00 KiB/s, done.
+Total 6 (delta 4), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (4/4), completed with 4 local objects.
+To github.com:Daiki-TANAHARA/Info3dm_w3.git
+   d0ed457..c29191a  main -> main
+(base) TD <ex_w3> % git add .           
+(base) TD <ex_w3> % git commit -m "ver4"
+[main 6425c85] ver4
+ 3 files changed, 12 insertions(+), 5 deletions(-)
+(base) TD <ex_w3> % git push            
+Enumerating objects: 11, done.
+Counting objects: 100% (11/11), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 864 bytes | 864.00 KiB/s, done.
+Total 6 (delta 4), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (4/4), completed with 4 local objects.
+To github.com:Daiki-TANAHARA/Info3dm_w3.git
+   c29191a..6425c85  main -> main
+(base) TD <ex_w3> % mkdir e4
+(base) TD <ex_w3> % cd e4
+(base) TD <e4> % code .
+(base) TD <e4> % code ..
+(base) TD <e4> % git add .
+(base) TD <e4> % git commit -m "ex4_1.1"
+[main c34baf1] ex4_1.1
+ 5 files changed, 33 insertions(+)
+ create mode 100644 e4/__pycache__/dataset1.cpython-311.pyc
+ create mode 100644 e4/dataset1.py
+ create mode 100644 e4/ex1.1.png
+ create mode 100644 e4/graph.py
+ create mode 100644 e4/test.py
+(base) TD <e4> % git push
+Enumerating objects: 10, done.
+Counting objects: 100% (10/10), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (9/9), done.
+Writing objects: 100% (9/9), 20.63 KiB | 10.31 MiB/s, done.
+Total 9 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To github.com:Daiki-TANAHARA/Info3dm_w3.git
+   6425c85..c34baf1  main -> main
+(base) TD <e4> % git add .              
+(base) TD <e4> % git commit -m "Re:ex4_1.1"
+[main e9206eb] Re:ex4_1.1
+ 2 files changed, 2 insertions(+), 1 deletion(-)
+(base) TD <e4> % git push                  
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 21.01 KiB | 21.01 MiB/s, done.
+Total 5 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To github.com:Daiki-TANAHARA/Info3dm_w3.git
+   c34baf1..e9206eb  main -> main
+(base) TD <e4> % git add .                 
+(base) TD <e4> % git commit -m "re:ex4_1.1"
+[main 14a7406] re:ex4_1.1
+ 2 files changed, 1 insertion(+), 1 deletion(-)
+(base) TD <e4> % git push                  
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 21.62 KiB | 21.62 MiB/s, done.
+Total 5 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To github.com:Daiki-TANAHARA/Info3dm_w3.git
+   e9206eb..14a7406  main -> main
+(base) TD <e4> %      
